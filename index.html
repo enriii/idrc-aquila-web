@@ -4,682 +4,111 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XXI Italian Drosophila Research Conference 2026 | L'Aquila</title>
-  <meta name="description" content="XXI Italian Drosophila Research Conference, 7–9 Luglio 2026, L'Aquila – Polo Universitario Coppito.">
-  <meta name="keywords" content="Drosophila, conferenza, ricerca, genetica, L'Aquila, IDRC 2026">
   <meta name="robots" content="noindex, nofollow">
-  <meta property="og:title" content="XXI Italian Drosophila Research Conference 2026">
-  <meta property="og:description" content="7–9 Luglio 2026 · L'Aquila, Polo Universitario Coppito">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://enricocapone.com/xxi-idrc/assets/Image-social.avif">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://enricocapone.com/xxi-idrc/assets/Image-social.avif">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/stemma-uni.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0f4290;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .logo {
+      height: 72px;
+      width: auto;
+      margin-bottom: 2.5rem;
+      opacity: 0.9;
+    }
+
+    .label {
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 900;
+      font-size: clamp(1.6rem, 5vw, 2.8rem);
+      line-height: 1.1;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+
+    .date {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 0.5rem;
+    }
+
+    .location {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 3rem;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: #E7560D;
+      margin: 0 auto 2.5rem;
+    }
+
+    .coming-soon {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1rem, 3vw, 1.4rem);
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 0.75rem;
+    }
+
+    .sub {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .contact {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .contact a {
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- ========== NAVBAR ========== -->
-  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigazione principale">
-    <div class="nav-container">
-      <a href="#hero" class="nav-brand" aria-label="Torna all'inizio">
-        <img src="assets/uni-aquila-white.avif" alt="Università degli Studi dell'Aquila" class="nav-logo">
-      </a>
-      <ul class="nav-links" role="list">
-        <li><a href="#schedule" class="nav-link">Programma</a></li>
-        <li><a href="#registration" class="nav-link">Registrazione</a></li>
-        <li><a href="#info" class="nav-link">Info pratiche</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="nav-mobile" id="nav-mobile" aria-hidden="true">
-      <a href="#schedule" class="nav-mobile-link">Programma</a>
-      <a href="#registration" class="nav-mobile-link">Registrazione</a>
-      <a href="#info" class="nav-mobile-link">Info pratiche</a>
-    </div>
-  </nav>
-
-  <!-- ========== 1. HERO ========== -->
-  <section id="hero" class="hero" aria-label="Hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content fade-in">
-      <h1 class="hero-heading">XXI Italian Drosophila<br>Research Conference</h1>
-      <div class="hero-date" aria-label="Date della conferenza">7–9 Luglio 2026</div>
-      <div class="hero-location">
-        <i data-lucide="map-pin" aria-hidden="true"></i>
-        L'Aquila (AQ) &nbsp;|&nbsp; Polo Universitario Coppito
-      </div>
-      <a href="#schedule" class="btn btn-accent btn-lg hero-cta">
-        <i data-lucide="calendar" aria-hidden="true"></i>
-        Vedi il Programma
-      </a>
-    </div>
-    <div class="hero-scroll-hint" aria-hidden="true">
-      <i data-lucide="chevron-down"></i>
-    </div>
-  </section>
-
-  <!-- ========== 2. SCHEDULE ========== -->
-  <section id="schedule" class="section schedule-section" aria-labelledby="schedule-title">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Programma</span>
-        <h2 id="schedule-title" class="section-title">Programma della Conferenza</h2>
-        <div class="section-rule"></div>
-      </div>
-    </div>
-    <div class="schedule-tabs-wrap">
-      <div class="container">
-        <div class="schedule-tabs" role="tablist" aria-label="Giorni della conferenza">
-          <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="day1" id="tab-day1" data-day="1">
-            <i data-lucide="calendar" aria-hidden="true"></i><span class="tab-label"> Giorno 1</span>
-            <span class="tab-date">Mar 7 Lug</span>
-          </button>
-          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="day2" id="tab-day2" data-day="2">
-            <i data-lucide="calendar" aria-hidden="true"></i><span class="tab-label"> Giorno 2</span>
-            <span class="tab-date">Mer 8 Lug</span>
-          </button>
-          <button class="tab-btn" role="tab" aria-selected="false" aria-controls="day3" id="tab-day3" data-day="3">
-            <i data-lucide="calendar" aria-hidden="true"></i><span class="tab-label"> Giorno 3</span>
-            <span class="tab-date">Gio 9 Lug</span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-
-      <!-- DAY 1 -->
-      <div class="tab-panel active" id="day1" role="tabpanel" aria-labelledby="tab-day1">
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-time">13:00 – 14:30</div>
-            <div class="timeline-content special">
-              <i data-lucide="users" aria-hidden="true"></i>
-              <div>
-                <p class="timeline-title">Registrazione e rinfresco di benvenuto</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">14:30 – 14:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Apertura conferenza</p>
-                <p class="timeline-speaker">Patrizia Morciano, Daniela Grifoni</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">14:45 – 15:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Chromatin dynamics in Drosophila development</p>
-                <p class="timeline-speaker">Prof.ssa Elena Rossi – Università di Roma La Sapienza</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">15:15 – 15:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Neural circuit formation and function</p>
-                <p class="timeline-speaker">Dr. Marco Bianchi – Università di Milano</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">15:45 – 16:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Epigenetic regulation of stem cell fate</p>
-                <p class="timeline-speaker">Dr.ssa Chiara Ferretti – Università di Padova</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item break">
-            <div class="timeline-time">16:15 – 16:45</div>
-            <div class="timeline-content break-content">
-              <i data-lucide="coffee" aria-hidden="true"></i>
-              <p class="timeline-title">Pausa Caffè</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">16:45 – 17:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Metabolic control of aging processes</p>
-                <p class="timeline-speaker">Prof. Giovanni Russo – Università di Napoli Federico II</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">17:15 – 17:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Drosophila models for neurodegenerative diseases</p>
-                <p class="timeline-speaker">Dr.ssa Francesca Lombardi – Università di Torino</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">17:45 – 18:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Cell signaling in wing development</p>
-                <p class="timeline-speaker">Dr. Andrea Conti – Università di Bologna</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">18:15 – 18:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">RNA binding proteins in oogenesis</p>
-                <p class="timeline-speaker">Dr.ssa Laura Martini – Università di Pisa</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">18:45 – 19:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Immune response mechanisms in Drosophila</p>
-                <p class="timeline-speaker">Prof. Stefano Verdi – Università di Firenze</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">19:15 – 19:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Novel CRISPR applications in fly genetics</p>
-                <p class="timeline-speaker">Dr.ssa Giulia Neri – Università di Trieste</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item break">
-            <div class="timeline-time">20:00</div>
-            <div class="timeline-content break-content dinner">
-              <i data-lucide="utensils" aria-hidden="true"></i>
-              <p class="timeline-title">Cena Sociale <span class="tba">(sede da definire)</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DAY 2 -->
-      <div class="tab-panel" id="day2" role="tabpanel" aria-labelledby="tab-day2" hidden>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-time">09:00 – 09:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Mitochondrial dynamics and quality control</p>
-                <p class="timeline-speaker">Prof.ssa Valeria Greco – Università di Bari</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">09:30 – 10:00</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Circadian rhythms and behavior</p>
-                <p class="timeline-speaker">Dr. Paolo Marini – Università di Pavia</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">10:00 – 10:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Transcriptional regulation in eye development</p>
-                <p class="timeline-speaker">Dr.ssa Silvia Ricci – Università di Genova</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item break">
-            <div class="timeline-time">10:30 – 11:00</div>
-            <div class="timeline-content break-content">
-              <i data-lucide="coffee" aria-hidden="true"></i>
-              <p class="timeline-title">Pausa Caffè</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">11:00 – 11:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Cancer models in Drosophila research</p>
-                <p class="timeline-speaker">Prof. Roberto Fabbri – Università dell'Aquila</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">11:30 – 12:00</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Autophagy in cellular homeostasis</p>
-                <p class="timeline-speaker">Dr.ssa Monica Galli – Università di Brescia</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:00 – 12:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Dopaminergic neuron development</p>
-                <p class="timeline-speaker">Dr. Luca Benedetti – Scuola Normale Superiore Pisa</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:30 – 12:50</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Gut-brain axis communication</p>
-                <p class="timeline-speaker">Dr.ssa Alessia Fontana – Università di Modena</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:50 – 13:20</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Tissue regeneration mechanisms</p>
-                <p class="timeline-speaker">Prof. Davide Colombo – Università di Catania</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">13:20 – 13:50</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">New tools for live imaging in Drosophila</p>
-                <p class="timeline-speaker">Dr.ssa Beatrice Moretti – Università di Trento</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item break">
-            <div class="timeline-time">14:00 – 15:30</div>
-            <div class="timeline-content break-content dinner">
-              <i data-lucide="utensils" aria-hidden="true"></i>
-              <p class="timeline-title">Pausa Pranzo</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">15:30 – 18:00</div>
-            <div class="timeline-content special">
-              <i data-lucide="users" aria-hidden="true"></i>
-              <div>
-                <p class="timeline-title">Sessione Poster e Networking</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- DAY 3 -->
-      <div class="tab-panel" id="day3" role="tabpanel" aria-labelledby="tab-day3" hidden>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-time">09:00 – 09:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Synaptic plasticity and memory</p>
-                <p class="timeline-speaker">Prof. Alberto Serra – Università di Cagliari</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">09:30 – 10:00</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">MicroRNA function in development</p>
-                <p class="timeline-speaker">Dr.ssa Roberta Pellegrini – Università di Perugia</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item break">
-            <div class="timeline-time">10:00 – 10:30</div>
-            <div class="timeline-content break-content">
-              <i data-lucide="coffee" aria-hidden="true"></i>
-              <p class="timeline-title">Pausa Caffè</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">10:30 – 11:00</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Proteostasis and neurodegeneration</p>
-                <p class="timeline-speaker">Dr. Matteo Costa – Università di Siena</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">11:00 – 11:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Drosophila as model for rare diseases</p>
-                <p class="timeline-speaker">Dr.ssa Carla Vitale – Università di Parma</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">11:30 – 12:00</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Chromatin architecture and gene expression</p>
-                <p class="timeline-speaker">Prof.ssa Simona Landi – CNR Roma</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:00 – 12:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Meiotic recombination mechanisms</p>
-                <p class="timeline-speaker">Dr. Emanuele Rizzo – Università di Venezia</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:30 – 13:00</div>
-            <div class="timeline-content special">
-              <i data-lucide="message-square" aria-hidden="true"></i>
-              <div>
-                <p class="timeline-title">Tavola rotonda e Saluti conclusivi</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">13:00 – 13:30</div>
-            <div class="timeline-content special">
-              <i data-lucide="flag" aria-hidden="true"></i>
-              <div>
-                <p class="timeline-title">Chiusura conferenza</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item break">
-            <div class="timeline-time">15:00 – 19:00</div>
-            <div class="timeline-content break-content tour">
-              <i data-lucide="mountain" aria-hidden="true"></i>
-              <div>
-                <p class="timeline-title">Visita LNGS <span class="badge-optional">Opzionale</span></p>
-                <p class="timeline-speaker">Laboratori Nazionali del Gran Sasso – Con pranzo incluso</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 4. REGISTRATION & ABSTRACT ========== -->
-  <section id="registration" class="section registration-section" aria-labelledby="registration-title">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Partecipa</span>
-        <h2 id="registration-title" class="section-title">Registrazione &amp; Abstract</h2>
-        <div class="section-rule"></div>
-      </div>
-      <div class="reg-grid fade-in">
-        <div class="reg-card">
-          <div class="reg-card-icon">
-            <i data-lucide="user" aria-hidden="true"></i>
-          </div>
-          <h3 class="reg-card-title">Conferma Partecipazione</h3>
-          <ul class="reg-dates" aria-label="Date conferma">
-            <li>
-              <i data-lucide="calendar" aria-hidden="true"></i>
-              <div>
-                <span class="reg-date-label">Scadenza</span>
-                <span class="reg-date-value">30 Maggio 2026</span>
-              </div>
-            </li>
-          </ul>
-          <a href="https://forms.gle/1F576oaSZQxXviT48" class="btn btn-accent btn-full" target="_blank" rel="noopener noreferrer" aria-label="Conferma la tua partecipazione">
-            <i data-lucide="external-link" aria-hidden="true"></i>
-            Conferma la tua Partecipazione
-          </a>
-        </div>
-        <div class="reg-card">
-          <div class="reg-card-icon">
-            <i data-lucide="file-text" aria-hidden="true"></i>
-          </div>
-          <h3 class="reg-card-title">Sottomissione Abstract</h3>
-          <ul class="reg-dates" aria-label="Requisiti abstract">
-            <li>
-              <i data-lucide="file" aria-hidden="true"></i>
-              <div>
-                <span class="reg-date-label">Lunghezza massima</span>
-                <span class="reg-date-value">300 parole</span>
-              </div>
-            </li>
-            <li>
-              <i data-lucide="users" aria-hidden="true"></i>
-              <div>
-                <span class="reg-date-label">Include</span>
-                <span class="reg-date-value">Autori, affiliazioni e titolo</span>
-              </div>
-            </li>
-          </ul>
-          <a href="#" class="btn btn-accent btn-full" aria-label="Invia il tuo abstract">
-            <i data-lucide="send" aria-hidden="true"></i>
-            Invia il tuo Abstract
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 5. LNGS TOUR ========== -->
-  <section id="tour" class="section tour-section" aria-labelledby="tour-title">
-    <div class="tour-overlay"></div>
-    <div class="container">
-      <div class="tour-content fade-in">
-        <span class="tour-badge">Opzionale</span>
-        <h2 id="tour-title" class="tour-heading">Visita ai Laboratori Nazionali del Gran Sasso</h2>
-        <div class="tour-date">
-          <i data-lucide="calendar" aria-hidden="true"></i>
-          9 Luglio 2026, ore 15:00 – 19:00
-        </div>
-        <ul class="tour-benefits" aria-label="Benefici del tour">
-          <li><i data-lucide="check-circle" aria-hidden="true"></i> Trasporto incluso</li>
-          <li><i data-lucide="check-circle" aria-hidden="true"></i> Pranzo incluso</li>
-          <li><i data-lucide="check-circle" aria-hidden="true"></i> Visita guidata ai laboratori sotterranei</li>
-          <li><i data-lucide="check-circle" aria-hidden="true"></i> Networking informale</li>
-        </ul>
-        <a href="https://forms.gle/Y3iy37QEHfXPyuSC7" class="btn btn-accent btn-lg" target="_blank" rel="noopener noreferrer">
-          <i data-lucide="mountain" aria-hidden="true"></i>
-          Conferma Partecipazione al Tour
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 6. PRACTICAL INFORMATION ========== -->
-  <section id="info" class="section info-section" aria-labelledby="info-title">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Logistica</span>
-        <h2 id="info-title" class="section-title">Informazioni Pratiche</h2>
-        <div class="section-rule"></div>
-      </div>
-      <div class="info-grid fade-in">
-        <!-- Accommodation -->
-        <div class="info-col">
-          <h3 class="info-col-title">
-            <i data-lucide="building" aria-hidden="true"></i>
-            Alloggio
-          </h3>
-          <div class="hotel-list">
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Hotel Duomo, 4 stelle, Centro storico">
-              <div class="hotel-info">
-                <span class="hotel-name">Hotel Duomo</span>
-                <span class="hotel-stars" aria-label="4 stelle">★★★★</span>
-              </div>
-              <span class="hotel-area">Centro storico</span>
-              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="B&B Aquilano, 3 stelle, Via Garibaldi">
-              <div class="hotel-info">
-                <span class="hotel-name">B&amp;B Aquilano</span>
-                <span class="hotel-stars" aria-label="3 stelle">★★★</span>
-              </div>
-              <span class="hotel-area">Via Garibaldi</span>
-              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Palazzo Margherita, 4 stelle, Piazza Battaglione">
-              <div class="hotel-info">
-                <span class="hotel-name">Palazzo Margherita</span>
-                <span class="hotel-stars" aria-label="4 stelle">★★★★</span>
-              </div>
-              <span class="hotel-area">Piazza Battaglione</span>
-              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Ostello San Salvatore, 2 stelle, Economico">
-              <div class="hotel-info">
-                <span class="hotel-name">Ostello San Salvatore</span>
-                <span class="hotel-stars" aria-label="2 stelle">★★</span>
-              </div>
-              <span class="hotel-area">Economico</span>
-              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Hotel Castello, 3 stelle, Vista panoramica">
-              <div class="hotel-info">
-                <span class="hotel-name">Hotel Castello</span>
-                <span class="hotel-stars" aria-label="3 stelle">★★★</span>
-              </div>
-              <span class="hotel-area">Vista panoramica</span>
-              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <!-- Travel Info -->
-        <div class="info-col">
-          <h3 class="info-col-title">
-            <i data-lucide="navigation" aria-hidden="true"></i>
-            Come arrivare
-          </h3>
-          <ul class="travel-list">
-            <li class="travel-item">
-              <div class="travel-icon">
-                <i data-lucide="car" aria-hidden="true"></i>
-              </div>
-              <div>
-                <p class="travel-label">In auto</p>
-                <p class="travel-desc">A24 Roma–L'Aquila, uscita L'Aquila Est</p>
-              </div>
-            </li>
-            <li class="travel-item">
-              <div class="travel-icon">
-                <i data-lucide="train" aria-hidden="true"></i>
-              </div>
-              <div>
-                <p class="travel-label">In treno</p>
-                <p class="travel-desc">Stazione L'Aquila + bus/taxi verso Polo Coppito</p>
-              </div>
-            </li>
-            <li class="travel-item">
-              <div class="travel-icon">
-                <i data-lucide="plane" aria-hidden="true"></i>
-              </div>
-              <div>
-                <p class="travel-label">In aereo</p>
-                <p class="travel-desc">Aeroporto più vicino: Roma Fiumicino (120 km)</p>
-              </div>
-            </li>
-          </ul>
-          <div class="shuttle-alert" role="alert">
-            <i data-lucide="bus" aria-hidden="true"></i>
-            <div>
-              <strong>Navetta gratuita</strong>
-              <p>Fontana Luminosa → Polo Coppito ore 9:00<br>Polo Coppito → Fontana Luminosa ore 18:30</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ORGANIZING COMMITTEE ========== -->
-  <section id="committee" class="section committee-section" aria-labelledby="committee-title">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Chi siamo</span>
-        <h2 id="committee-title" class="section-title">Comitato Organizzatore</h2>
-        <div class="section-rule"></div>
-      </div>
-      <div class="committee-content fade-in">
-        <div class="committee-names">
-          <div class="committee-person">
-            <img src="assets/patrizia-morciano.jpeg" alt="Patrizia Morciano" class="person-avatar">
-            <p class="person-name">Dott.ssa Patrizia Morciano</p>
-            <a href="mailto:patrizia.morciano@guest.univaq.it" class="person-email">patrizia.morciano@guest.univaq.it</a>
-          </div>
-          <div class="committee-divider" aria-hidden="true">&amp;</div>
-          <div class="committee-person">
-            <img src="assets/daniela-grifoni.jpeg" alt="Daniela Grifoni" class="person-avatar">
-            <p class="person-name">Prof.ssa Daniela Grifoni</p>
-            <a href="mailto:daniela.grifoni@univaq.it" class="person-email">daniela.grifoni@univaq.it</a>
-          </div>
-        </div>
-        <div class="committee-badges">
-          <div class="lab-badge">
-            <img src="assets/cancerrevolution.avif" alt="CanceREvolutionLab" class="badge-logo">
-          </div>
-          <div class="uni-badge">
-            <img src="assets/uni-aquila.avif" alt="Università degli Studi dell'Aquila" class="badge-logo">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 7. SPONSORS ========== -->
-  <section id="sponsors" class="section sponsors-section" aria-labelledby="sponsors-title">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Partner</span>
-        <h2 id="sponsors-title" class="section-title">Con il supporto di</h2>
-        <div class="section-rule"></div>
-      </div>
-      <div class="sponsors-scroll">
-      <div class="sponsors-grid fade-in" role="list">
-        <a href="https://www.biosigma.it/" class="sponsor-item" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="Biosigma sponsor">
-          <img src="assets/sponsors/biosigma.avif" alt="Biosigma" class="sponsor-logo">
-        </a>
-        <a href="https://www.digiovannisrl.it/" class="sponsor-item" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="Di Giovanni sponsor">
-          <img src="assets/sponsors/di-giovanni.avif" alt="Di Giovanni" class="sponsor-logo">
-        </a>
-        <a href="https://www.nikon.com/" class="sponsor-item" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="Nikon Instruments sponsor">
-          <img src="assets/sponsors/nikon.avif" alt="Nikon Instruments" class="sponsor-logo">
-        </a>
-        <a href="https://www.novogene.com/eu-en/" class="sponsor-item" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="Novogene Europe sponsor">
-          <img src="assets/sponsors/novogene.avif" alt="Novogene Europe" class="sponsor-logo">
-        </a>
-        <a href="https://temaricerca.com/" class="sponsor-item" role="listitem" target="_blank" rel="noopener noreferrer" aria-label="Tema Ricerca sponsor">
-          <img src="assets/sponsors/tema-ricerca.avif" alt="Tema Ricerca" class="sponsor-logo">
-        </a>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== 8. FOOTER / CONTACTS ========== -->
-  <footer id="contacts" class="footer" aria-label="Footer e contatti">
-    <div class="container">
-      <div class="footer-bottom">
-        <p>&copy; 2026 XXI IDRC – Università degli Studi dell'Aquila. Tutti i diritti riservati.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <img src="assets/uni-aquila-white.avif" alt="Università degli Studi dell'Aquila" class="logo">
+  <p class="label">Prossimamente</p>
+  <h1>XXI Italian Drosophila<br>Research Conference</h1>
+  <p class="date">7–9 Luglio 2026</p>
+  <p class="location">L'Aquila · Polo Universitario Coppito</p>
+  <div class="divider"></div>
+  <p class="coming-soon">Sito in costruzione</p>
+  <p class="sub">Tutte le informazioni saranno disponibili a breve.</p>
+  <p class="contact">Per informazioni: <a href="mailto:patrizia.morciano@guest.univaq.it">patrizia.morciano@guest.univaq.it</a></p>
 </body>
 </html>
