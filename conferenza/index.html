@@ -19,6 +19,7 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <link rel="icon" href="../assets/stemma-uni.ico" type="image/x-icon">
   <link rel="stylesheet" href="../style.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -48,7 +49,7 @@
   <section id="hero" class="hero" aria-label="Hero">
     <div class="hero-overlay"></div>
     <div class="hero-content fade-in">
-      <h1 class="hero-heading">XXI Italian Drosophila<br>Research Conference</h1>
+      <h1 class="hero-heading">XXI Italian <em>Drosophila</em><br>Research Conference</h1>
       <div class="hero-date" aria-label="Conference dates">July 7–9, 2026</div>
       <div class="hero-location">
         <i data-lucide="map-pin" aria-hidden="true"></i>
@@ -97,116 +98,37 @@
       <div class="tab-panel active" id="day1" role="tabpanel" aria-labelledby="tab-day1">
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-time">13:00 – 14:30</div>
+            <div class="timeline-time">14:00 – 15:00</div>
             <div class="timeline-content special">
               <i data-lucide="users" aria-hidden="true"></i>
               <div>
-                <p class="timeline-title">Registration and welcome reception</p>
+                <p class="timeline-title">Registration, welcome and light lunch</p>
               </div>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">14:30 – 14:45</div>
+            <div class="timeline-time">15:00 – 16:00</div>
             <div class="timeline-content">
               <div>
-                <p class="timeline-title">Conference opening</p>
+                <p class="timeline-title">Opening talk</p>
                 <p class="timeline-speaker">Patrizia Morciano, Daniela Grifoni</p>
               </div>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">14:45 – 15:15</div>
+            <div class="timeline-time">16:00 – 18:45</div>
             <div class="timeline-content">
               <div>
-                <p class="timeline-title">Chromatin dynamics in Drosophila development</p>
-                <p class="timeline-speaker">Prof.ssa Elena Rossi – Università di Roma La Sapienza</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">15:15 – 15:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Neural circuit formation and function</p>
-                <p class="timeline-speaker">Dr. Marco Bianchi – Università di Milano</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">15:45 – 16:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Epigenetic regulation of stem cell fate</p>
-                <p class="timeline-speaker">Dr.ssa Chiara Ferretti – Università di Padova</p>
+                <p class="timeline-title">Talk Session 1, poster highlights, sponsor time</p>
+                <p class="timeline-speaker">More informations coming soon...</p>
               </div>
             </div>
           </div>
           <div class="timeline-item break">
-            <div class="timeline-time">16:15 – 16:45</div>
-            <div class="timeline-content break-content">
-              <i data-lucide="coffee" aria-hidden="true"></i>
-              <p class="timeline-title">Coffee Break</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">16:45 – 17:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Metabolic control of aging processes</p>
-                <p class="timeline-speaker">Prof. Giovanni Russo – Università di Napoli Federico II</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">17:15 – 17:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Drosophila models for neurodegenerative diseases</p>
-                <p class="timeline-speaker">Dr.ssa Francesca Lombardi – Università di Torino</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">17:45 – 18:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Cell signaling in wing development</p>
-                <p class="timeline-speaker">Dr. Andrea Conti – Università di Bologna</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">18:15 – 18:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">RNA binding proteins in oogenesis</p>
-                <p class="timeline-speaker">Dr.ssa Laura Martini – Università di Pisa</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">18:45 – 19:15</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Immune response mechanisms in Drosophila</p>
-                <p class="timeline-speaker">Prof. Stefano Verdi – Università di Firenze</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">19:15 – 19:45</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Novel CRISPR applications in fly genetics</p>
-                <p class="timeline-speaker">Dr.ssa Giulia Neri – Università di Trieste</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item break">
-            <div class="timeline-time">20:00</div>
-            <div class="timeline-content break-content dinner">
-              <i data-lucide="utensils" aria-hidden="true"></i>
-              <p class="timeline-title">Social Dinner <span class="tba">(venue to be confirmed)</span></p>
+            <div class="timeline-time">19:00</div>
+            <div class="timeline-content special">
+              <i data-lucide="bus" aria-hidden="true"></i>
+              <p class="timeline-title">Shuttle to Fontana Luminosa</p>
             </div>
           </div>
         </div>
@@ -216,107 +138,74 @@
       <div class="tab-panel" id="day2" role="tabpanel" aria-labelledby="tab-day2" hidden>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-time">09:00 – 09:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Mitochondrial dynamics and quality control</p>
-                <p class="timeline-speaker">Prof.ssa Valeria Greco – Università di Bari</p>
-              </div>
+            <div class="timeline-time">09:30</div>
+            <div class="timeline-content special">
+              <i data-lucide="bus" aria-hidden="true"></i>
+              <p class="timeline-title">Shuttle from Fontana Luminosa</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">09:30 – 10:00</div>
+            <div class="timeline-time">10:00 – 11:30</div>
             <div class="timeline-content">
               <div>
-                <p class="timeline-title">Circadian rhythms and behavior</p>
-                <p class="timeline-speaker">Dr. Paolo Marini – Università di Pavia</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">10:00 – 10:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Transcriptional regulation in eye development</p>
-                <p class="timeline-speaker">Dr.ssa Silvia Ricci – Università di Genova</p>
+                <p class="timeline-title">Talk Session 2</p>
+                <p class="timeline-speaker">More informations coming soon...</p>
               </div>
             </div>
           </div>
           <div class="timeline-item break">
-            <div class="timeline-time">10:30 – 11:00</div>
+            <div class="timeline-time">11:30 – 11:45</div>
             <div class="timeline-content break-content">
               <i data-lucide="coffee" aria-hidden="true"></i>
-              <p class="timeline-title">Coffee Break</p>
+              <p class="timeline-title">Coffee break</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">11:00 – 11:30</div>
+            <div class="timeline-time">11:45 – 13:15</div>
             <div class="timeline-content">
               <div>
-                <p class="timeline-title">Cancer models in Drosophila research</p>
-                <p class="timeline-speaker">Prof. Roberto Fabbri – Università dell'Aquila</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">11:30 – 12:00</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Autophagy in cellular homeostasis</p>
-                <p class="timeline-speaker">Dr.ssa Monica Galli – Università di Brescia</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:00 – 12:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Dopaminergic neuron development</p>
-                <p class="timeline-speaker">Dr. Luca Benedetti – Scuola Normale Superiore Pisa</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:30 – 12:50</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Gut-brain axis communication</p>
-                <p class="timeline-speaker">Dr.ssa Alessia Fontana – Università di Modena</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:50 – 13:20</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Tissue regeneration mechanisms</p>
-                <p class="timeline-speaker">Prof. Davide Colombo – Università di Catania</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">13:20 – 13:50</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">New tools for live imaging in Drosophila</p>
-                <p class="timeline-speaker">Dr.ssa Beatrice Moretti – Università di Trento</p>
+                <p class="timeline-title">Talk Session 3</p>
+                <p class="timeline-speaker">More informations coming soon...</p>
               </div>
             </div>
           </div>
           <div class="timeline-item break">
-            <div class="timeline-time">14:00 – 15:30</div>
+            <div class="timeline-time">13:15 – 15:30</div>
             <div class="timeline-content break-content dinner">
               <i data-lucide="utensils" aria-hidden="true"></i>
-              <p class="timeline-title">Lunch Break</p>
+              <p class="timeline-title">Social lunch</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">15:30 – 18:00</div>
-            <div class="timeline-content special">
-              <i data-lucide="users" aria-hidden="true"></i>
+            <div class="timeline-time">15:30 – 17:00</div>
+            <div class="timeline-content">
               <div>
-                <p class="timeline-title">Poster Session and Networking</p>
+                <p class="timeline-title">Talk Session 4</p>
+                <p class="timeline-speaker">More informations coming soon...</p>
               </div>
+            </div>
+          </div>
+          <div class="timeline-item break">
+            <div class="timeline-time">17:00 – 17:15</div>
+            <div class="timeline-content break-content">
+              <i data-lucide="coffee" aria-hidden="true"></i>
+              <p class="timeline-title">Coffee break</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15:15 – 18:45</div>
+            <div class="timeline-content">
+              <div>
+                <p class="timeline-title">Talk Session 5</p>
+                <p class="timeline-speaker">More informations coming soon...</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item break">
+            <div class="timeline-time">19:00</div>
+            <div class="timeline-content special">
+              <i data-lucide="bus" aria-hidden="true"></i>
+              <p class="timeline-title">Shuttle to Fontana Luminosa</p>
             </div>
           </div>
         </div>
@@ -326,92 +215,83 @@
       <div class="tab-panel" id="day3" role="tabpanel" aria-labelledby="tab-day3" hidden>
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-time">09:00 – 09:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Synaptic plasticity and memory</p>
-                <p class="timeline-speaker">Prof. Alberto Serra – Università di Cagliari</p>
-              </div>
+            <div class="timeline-time">09:30</div>
+            <div class="timeline-content special">
+              <i data-lucide="bus" aria-hidden="true"></i>
+              <p class="timeline-title">Shuttle from Fontana Luminosa</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">09:30 – 10:00</div>
+            <div class="timeline-time">10:00 – 11:45</div>
             <div class="timeline-content">
               <div>
-                <p class="timeline-title">MicroRNA function in development</p>
-                <p class="timeline-speaker">Dr.ssa Roberta Pellegrini – Università di Perugia</p>
+                <p class="timeline-title">Talk Session 6</p>
+                <p class="timeline-speaker">More informations coming soon...</p>
               </div>
             </div>
           </div>
           <div class="timeline-item break">
-            <div class="timeline-time">10:00 – 10:30</div>
+            <div class="timeline-time">11:45 – 12:00</div>
             <div class="timeline-content break-content">
               <i data-lucide="coffee" aria-hidden="true"></i>
-              <p class="timeline-title">Coffee Break</p>
+              <p class="timeline-title">Coffee break</p>
             </div>
           </div>
           <div class="timeline-item">
-            <div class="timeline-time">10:30 – 11:00</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Proteostasis and neurodegeneration</p>
-                <p class="timeline-speaker">Dr. Matteo Costa – Università di Siena</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">11:00 – 11:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Drosophila as model for rare diseases</p>
-                <p class="timeline-speaker">Dr.ssa Carla Vitale – Università di Parma</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">11:30 – 12:00</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Chromatin architecture and gene expression</p>
-                <p class="timeline-speaker">Prof.ssa Simona Landi – CNR Roma</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:00 – 12:30</div>
-            <div class="timeline-content">
-              <div>
-                <p class="timeline-title">Meiotic recombination mechanisms</p>
-                <p class="timeline-speaker">Dr. Emanuele Rizzo – Università di Venezia</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">12:30 – 13:00</div>
-            <div class="timeline-content special">
-              <i data-lucide="message-square" aria-hidden="true"></i>
-              <div>
-                <p class="timeline-title">Round Table and Closing Remarks</p>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-time">13:00 – 13:30</div>
+            <div class="timeline-time">12:00 – 13:00</div>
             <div class="timeline-content special">
               <i data-lucide="flag" aria-hidden="true"></i>
               <div>
-                <p class="timeline-title">Conference closing</p>
+                <p class="timeline-title">Award and conclusion</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-group-label">For those not attending the LNGS visit</div>
+          <div class="timeline-item break">
+            <div class="timeline-time">13:15</div>
+            <div class="timeline-content break-content">
+              <i data-lucide="bus" aria-hidden="true"></i>
+              <p class="timeline-title">Shuttle to Fontana Luminosa</p>
+            </div>
+          </div>
+
+          <div class="timeline-group-label">For those attending the LNGS visit</div>
+          <div class="timeline-item">
+            <div class="timeline-time">13:15 – 13:30</div>
+            <div class="timeline-content">
+              <div>
+                <p class="timeline-title">LNGS Safety Video</p>
               </div>
             </div>
           </div>
           <div class="timeline-item break">
-            <div class="timeline-time">15:00 – 19:00</div>
-            <div class="timeline-content break-content tour">
+            <div class="timeline-time">13:30 – 15:00</div>
+            <div class="timeline-content break-content dinner">
+              <i data-lucide="utensils" aria-hidden="true"></i>
+              <p class="timeline-title">Light lunch</p>
+            </div>
+          </div>
+          <div class="timeline-item break">
+            <div class="timeline-time">15:00</div>
+            <div class="timeline-content break-content">
+              <i data-lucide="bus" aria-hidden="true"></i>
+              <p class="timeline-title">Shuttle to LNGS</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">15:30 – 18:15</div>
+            <div class="timeline-content special">
               <i data-lucide="mountain" aria-hidden="true"></i>
               <div>
-                <p class="timeline-title">LNGS Visit <span class="badge-optional">Optional</span></p>
-                <p class="timeline-speaker">Laboratori Nazionali del Gran Sasso – Lunch included</p>
+                <p class="timeline-title">LNGS and Underground visit</p>
               </div>
+            </div>
+          </div>
+          <div class="timeline-item break">
+            <div class="timeline-time">18:30</div>
+            <div class="timeline-content break-content">
+              <i data-lucide="bus" aria-hidden="true"></i>
+              <p class="timeline-title">Shuttle to Fontana Luminosa</p>
             </div>
           </div>
         </div>
@@ -468,7 +348,7 @@
               </div>
             </li>
           </ul>
-          <a href="#" class="btn btn-accent btn-full" aria-label="Submit your abstract">
+          <a href="https://forms.gle/4EobeGQ4rtLS33ds7" class="btn btn-accent btn-full" aria-label="Submit your abstract">
             <i data-lucide="send" aria-hidden="true"></i>
             Submit your Abstract
           </a>
@@ -491,12 +371,11 @@
         <ul class="tour-benefits" aria-label="Tour benefits">
           <li><i data-lucide="check-circle" aria-hidden="true"></i> Transport included</li>
           <li><i data-lucide="check-circle" aria-hidden="true"></i> Lunch included</li>
-          <li><i data-lucide="check-circle" aria-hidden="true"></i> Guided tour of the underground laboratories</li>
+          <li><i data-lucide="check-circle" aria-hidden="true"></i> Guided tour</li>
           <li><i data-lucide="check-circle" aria-hidden="true"></i> Informal networking</li>
         </ul>
         <a href="https://forms.gle/Y3iy37QEHfXPyuSC7" class="btn btn-accent btn-lg" target="_blank" rel="noopener noreferrer">
-          <i data-lucide="mountain" aria-hidden="true"></i>
-          Confirm Tour Participation
+          Confirm tour participation
         </a>
       </div>
     </div>
@@ -518,44 +397,111 @@
             Accommodation
           </h3>
           <div class="hotel-list">
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Hotel Duomo, 4 stars, Historic centre">
+            <p class="hotel-group-label">City centre <span style="font-weight:400;text-transform:none;letter-spacing:0">(near shuttle stop)</span></p>
+            <a href="https://www.hotel-laquila.aq.it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Hotel L'Aquila">
               <div class="hotel-info">
-                <span class="hotel-name">Hotel Duomo</span>
-                <span class="hotel-stars" aria-label="4 stars">★★★★</span>
+                <span class="hotel-name">Hotel L'Aquila</span>
+                <span class="hotel-area">Via Simonetto 5A</span>
               </div>
-              <span class="hotel-area">Historic centre</span>
               <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
             </a>
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="B&B Aquilano, 3 stars, Via Garibaldi">
+            <a href="https://www.hotelfedericosecondo.it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Hotel Federico II">
               <div class="hotel-info">
-                <span class="hotel-name">B&amp;B Aquilano</span>
-                <span class="hotel-stars" aria-label="3 stars">★★★</span>
+                <span class="hotel-name">Hotel Federico II</span>
+                <span class="hotel-area">Via Strinella 6</span>
               </div>
-              <span class="hotel-area">Via Garibaldi</span>
               <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
             </a>
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Palazzo Margherita, 4 stars, Piazza Battaglione">
-              <div class="hotel-info">
-                <span class="hotel-name">Palazzo Margherita</span>
-                <span class="hotel-stars" aria-label="4 stars">★★★★</span>
-              </div>
-              <span class="hotel-area">Piazza Battaglione</span>
-              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Ostello San Salvatore, 2 stars, Budget">
-              <div class="hotel-info">
-                <span class="hotel-name">Ostello San Salvatore</span>
-                <span class="hotel-stars" aria-label="2 stars">★★</span>
-              </div>
-              <span class="hotel-area">Budget</span>
-              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Hotel Castello, 3 stars, Panoramic view">
+            <a href="https://www.hotelcastelloaq.it" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Hotel Castello">
               <div class="hotel-info">
                 <span class="hotel-name">Hotel Castello</span>
-                <span class="hotel-stars" aria-label="3 stars">★★★</span>
+                <span class="hotel-area">Piazza Battaglione degli Alpini</span>
               </div>
-              <span class="hotel-area">Panoramic view</span>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.madihotel.it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Hotel San Michele">
+              <div class="hotel-info">
+                <span class="hotel-name">Hotel San Michele</span>
+                <span class="hotel-area">Via dei Giardini 6</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://palazzodeipavoni.it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Palazzo dei Pavoni">
+              <div class="hotel-info">
+                <span class="hotel-name">Palazzo dei Pavoni</span>
+                <span class="hotel-area">Via Paganica 18</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://ginevraboutiquerooms.com/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Ginevra Boutique Rooms">
+              <div class="hotel-info">
+                <span class="hotel-name">Ginevra Boutique Rooms</span>
+                <span class="hotel-area">Via Scardassieri</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://bbpalazzocappa.it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="B&B Palazzo Cappa">
+              <div class="hotel-info">
+                <span class="hotel-name">B&amp;B Palazzo Cappa</span>
+                <span class="hotel-area">Via Paganica 37</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://civico16.hotelcasadei.net/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Civico16 Appartamento">
+              <div class="hotel-info">
+                <span class="hotel-name">Civico16 Appartamento</span>
+                <span class="hotel-area">Via San Crisante 16</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://bb-eden.abruzzohotels24.com/it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="B&B Eden">
+              <div class="hotel-info">
+                <span class="hotel-name">B&amp;B Eden</span>
+                <span class="hotel-area">Via Collebrincioni 2</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.sanmarcianoluxury.it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="San Marciano Luxury Rooms">
+              <div class="hotel-info">
+                <span class="hotel-name">San Marciano Luxury Rooms</span>
+                <span class="hotel-area">Via San Marciano 14</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.lecancelle.it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Le Cancelle">
+              <div class="hotel-info">
+                <span class="hotel-name">Le Cancelle</span>
+                <span class="hotel-area">Via Simeonibus</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <p class="hotel-group-label">Outside the centre</p>
+            <a href="https://www.magionepapale.it/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Magione Papale Relais">
+              <div class="hotel-info">
+                <span class="hotel-name">Magione Papale Relais</span>
+                <span class="hotel-area">Via Porta Napoli 67/I</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.booking.com/Share-jjW49V4" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="Dimora Fortebraccio">
+              <div class="hotel-info">
+                <span class="hotel-name">Dimora Fortebraccio</span>
+                <span class="hotel-area">Via Fortebraccio 71</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://ladimoradelbaco.com/" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="La Dimora del Baco Hotel">
+              <div class="hotel-info">
+                <span class="hotel-name">La Dimora del Baco Hotel</span>
+                <span class="hotel-area">Loc. Centi Colella, S.S. 17 Ovest</span>
+              </div>
+              <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.mysuitehotel.it" class="hotel-card" target="_blank" rel="noopener noreferrer" aria-label="My Suite Hotel">
+              <div class="hotel-info">
+                <span class="hotel-name">My Suite Hotel</span>
+                <span class="hotel-area">S.S. 17 Ovest</span>
+              </div>
               <i data-lucide="external-link" class="hotel-icon" aria-hidden="true"></i>
             </a>
           </div>
@@ -603,6 +549,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="map-wrap fade-in">
+        <div id="venue-map" style="height:360px;width:100%;"></div>
       </div>
     </div>
   </section>
@@ -681,5 +630,24 @@
   </footer>
 
   <script src="../script.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZW5yaWlpOTEiLCJhIjoiY21ueGZrcGo5MDIyNDJvczZyOW5peHE4dCJ9.DiMdSqUrwnuQy5LGLBJ8eg';
+    const venueMap = new mapboxgl.Map({
+      container: 'venue-map',
+      style: 'mapbox://styles/mapbox/streets-v12',
+      center: [13.376, 42.361],
+      zoom: 12.5,
+      scrollZoom: false
+    });
+    new mapboxgl.Marker({ color: '#9b3d10' })
+      .setLngLat([13.3505271, 42.3685354])
+      .setPopup(new mapboxgl.Popup().setHTML('<strong>Coppito 1</strong><br>Conference Venue<br><a href="https://maps.app.goo.gl/uKr7N5qYywAGnELU7" target="_blank" rel="noopener noreferrer" style="color:#9b3d10;font-size:0.8rem;">Open in Google Maps ↗</a>'))
+      .addTo(venueMap);
+    new mapboxgl.Marker({ color: '#1a2744' })
+      .setLngLat([13.4013616, 42.3538315])
+      .setPopup(new mapboxgl.Popup().setHTML('<strong>Fontana Luminosa</strong><br>Shuttle stop<br><a href="https://maps.app.goo.gl/aMSfsE5GUSCvXwSq7" target="_blank" rel="noopener noreferrer" style="color:#9b3d10;font-size:0.8rem;">Open in Google Maps ↗</a>'))
+      .addTo(venueMap);
+  </script>
 </body>
 </html>

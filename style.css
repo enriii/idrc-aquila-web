@@ -581,6 +581,16 @@ img, svg {
   background: var(--accent);
 }
 
+.timeline-group-label {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-left: calc(8rem + 1.25rem);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
 .timeline-time {
   font-family: var(--font-body);
   font-weight: 700;
@@ -837,8 +847,8 @@ img, svg {
    ============================================================ */
 .info-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
 }
 
 .info-col-title {
@@ -858,14 +868,28 @@ img, svg {
 
 /* Hotel list */
 .hotel-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
+}
+
+.hotel-group-label {
+  grid-column: 1 / -1;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  padding-top: 0.75rem;
+}
+
+.hotel-group-label:first-child {
+  padding-top: 0;
 }
 
 .hotel-card {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1rem;
@@ -881,10 +905,19 @@ img, svg {
   background: var(--surface);
 }
 
+.hotel-card--nolink {
+  cursor: default;
+}
+
+.hotel-card--nolink:hover {
+  border-color: var(--border);
+  background: var(--bg);
+}
+
 .hotel-info {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
 .hotel-name {
@@ -892,12 +925,6 @@ img, svg {
   font-weight: 700;
   font-size: 0.9rem;
   color: var(--text);
-}
-
-.hotel-stars {
-  font-size: 0.7rem;
-  color: #b08450;
-  letter-spacing: 0.05em;
 }
 
 .hotel-area {
@@ -911,6 +938,7 @@ img, svg {
   width: 14px;
   height: 14px;
   color: var(--muted);
+  flex-shrink: 0;
 }
 
 /* Travel list */
@@ -986,6 +1014,14 @@ img, svg {
   font-style: italic;
   font-size: 0.82rem;
   color: var(--muted);
+}
+
+/* ---------- Map ---------- */
+.map-wrap {
+  margin-top: 2.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
 }
 
 /* ============================================================
@@ -1148,6 +1184,10 @@ img, svg {
   .hamburger { display: flex; }
   .nav-mobile.open { display: flex; }
 
+  .timeline-group-label {
+    margin-left: 0;
+  }
+
   .hero {
     min-height: 80vh;
     background-image: url('assets/header-mobile.avif');
@@ -1198,9 +1238,8 @@ img, svg {
     grid-template-columns: 1fr;
   }
 
-  .info-grid {
+  .hotel-list {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
 
   .sponsors-scroll {
@@ -1308,11 +1347,6 @@ img, svg {
 
   .committee-divider { margin-top: 0; }
 
-  .hotel-card {
-    grid-template-columns: 1fr auto;
-  }
-
-  .hotel-area { display: none; }
 
   .sponsors-grid {
     grid-template-columns: repeat(2, 1fr);
