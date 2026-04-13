@@ -1176,6 +1176,13 @@ img, svg {
   color: rgba(255,255,255,0.35);
 }
 
+.footer-credit {
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-credit:hover { color: rgba(255,255,255,0.8); }
+
 /* ============================================================
    RESPONSIVE — 768px
    ============================================================ */
